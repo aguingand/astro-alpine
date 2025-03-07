@@ -9,7 +9,7 @@ interface Props {
 const { initialCount = 1 } = Astro.props;
 ---
 
-<div class="counter"
+<div class="counter bg-black"
 	x-data="{ count: Alpine.extractProp($el, 'initial-count') }"
 	:initial-count={ initialCount }
 >

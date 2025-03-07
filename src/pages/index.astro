@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import Counter from '../components/Counter.astro';
+import "../styles/global.css";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -23,7 +24,7 @@ import Counter from '../components/Counter.astro';
 			}
 		</style>
 	</head>
-	<body>
+	<body class="bg-black text-white">
 		<main>
 			<!-- Note: no `client:load` necessary since AlpineJS is always included -->
 			<Counter>
